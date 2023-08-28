@@ -1,0 +1,147 @@
+body {
+    background-color:rgb(0, 0, 0);
+    margin:0;
+    overflow: hidden;
+}
+.head {
+    width:100%;
+    height:3rem;
+    background-color:rgb(255, 187, 30);
+}
+.main {
+    margin-top:10rem;
+    width:30rem;
+    border-radius:10px;
+    margin:4rem auto;
+    background-color: rgb(0, 0, 0);
+    border:1px solid rgb(46, 46, 46);
+}
+.display {
+    width:100%;
+    height:10rem;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 1px 1px 6px black;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.currentValue {
+    display: inline-flex;
+    width:90%;
+}
+.btns {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0);
+}
+.add,.sub,.mul,.div {
+    color:white;
+    width:5rem;
+    margin:10px;
+    height:5rem;
+    border-radius:30px;
+    font-size:30px;
+    font-weight:700;
+    border-style:none;
+}
+#o:active {
+    background-color:rgb(121, 79, 0);
+
+}
+.equal {
+    background-color:orange;
+    width:90%;
+    height:4rem;
+    border-radius:20px;
+    font-size:30px;
+    border-style:none;
+    margin:1rem 0px;
+}
+.num .n{
+    width:5rem;
+    margin:10px;
+    height:5rem;
+    border-radius:4px;
+    font-size:20px;
+    font-weight:700;
+    color:rgb(255, 153, 36);
+    border-style:none;
+
+}
+.n:active {
+    background-color:rgb(26, 26, 26);
+    border-radius:30px;
+}
+.history {
+    background-color: rgba(175, 217, 217, 0);
+    width:80%;
+    height:3rem;
+    margin:10px;
+    padding-left:10px;
+}
+.current {
+    background-color: rgba(35, 36, 36, 0);
+    width:90%;
+    height:5rem;
+    margin:10px;
+    position: relative;
+    bottom:10px;
+    padding-left:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color:black;
+    color:white;
+}
+
+@media only screen and (min-width:320px) and (max-width:700px) {
+    .main {
+        width:95%;
+        height:50rem;
+        border-style: none;
+        
+    }
+    .display {
+        font-size:22px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .head{
+        display: none;
+    }
+    .num .n {
+        width:7rem;
+        height:7rem;
+        margin-top:20px;
+        font-size:22px;
+
+    }
+    #o{
+        width:7rem;
+        height:7rem;
+    }
+    .equal {
+        background-color:orange;
+        width:90%;
+        height:6rem;
+        border-radius:20px;
+        font-size:30px;
+        border-style:none;
+        margin:4rem 0px; 
+    }
+    
+}
